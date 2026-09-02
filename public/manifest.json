@@ -1,0 +1,23 @@
+{
+  "name": "Appliances Repair Solutions",
+  "short_name": "Appliance Repairs",
+  "description": "Fast, reliable and professional appliance repair services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071525",
+  "theme_color": "#0877d1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "business",
+    "lifestyle"
+  ],
+  "lang": "en-ZA"
+}
