@@ -3,14 +3,14 @@ import { X, ZoomIn } from 'lucide-react';
 import { useInView } from '../hooks/useInView';
 
 const IMAGES = [
-  { src: 'https://cdn6.ep.dynamics.net/s3/rw-propertyimages/2801-H3125076-99702774__1721265853-49151-DSC07954.jpg?anchor=middlecenter&format=jpg&height=640&maxheight=2841&maxwidth=2841&mode=crop&quality=75&scale=down&width=640', cat: 'Fridges', title: 'Fridge & Freezer Repairs' },
-  { src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTA1NjQ4NjAxNTY1MTI4MTM4Mw%3D%3D/original/19aa75e9-4e44-4bc6-a422-16fbbd369aa4.jpeg?im_w=720', cat: 'Laundry', title: 'Washing Machine Repairs' },
-  { src: 'https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097924_1046289.png?v=1776396808', cat: 'Cooking', title: 'Oven & Stove Repairs' },
-  { src: 'https://cdn.cocinaintegral.net/cocinaintegral/2024/05/FAGOR-LAVAVAJILLAS.jpg', cat: 'Dishwashers', title: 'Dishwasher Repairs' },
-  { src: 'https://www.viessmann.be/content/dam/public-brands/fr/tout-savoir/technologies-chauffage/pompes-chaleur-air-air/3-2-vitoclima-confort.jpg/_jcr_content/renditions/original./3-2-vitoclima-confort.jpg', cat: 'Air Conditioning', title: 'Air Conditioner Service' },
-  { src: 'https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI1LTA0L3NyLWltYWdlLTA5MDQyMDI1LW1rbTA0LXMtMjI5XzEuanBn.jpg', cat: 'Microwaves', title: 'Microwave Repairs' },
-  { src: 'https://object.pscloud.io/cms/cms/Uploads/mikr.png', cat: 'Microwaves', title: 'Kitchen Microwave Service' },
-  { src: 'https://primary.jwwb.nl/public/h/i/m/temp-owlijzqjqgdpuzijwkjm/ds-head-01-high.png?crop=1.3333%3A1&enable=upscale&enable-io=true&width=800', cat: 'Air Conditioning', title: 'Residential Air Conditioner Service' },
+  { src: 'https://www.bestchoiceappliancerepairs.co.za/images/best_choice_hero.jpg', cat: 'Fridges', title: 'Fridge & Freezer Repairs' },
+  { src: 'https://fortune.com/img-assets/wp-content/uploads/2016/01/appliances-2-sa2-copy-copy.jpg?q=75&w=1440', cat: 'Washing Machines', title: 'Washing Machine Repairs' },
+  { src: 'https://etimg.etb2bimg.com/thumb/msid-126394933%2Cwidth-1200%2Cheight-900%2Cresizemode-4/.jpg', cat: 'TVs & Electronics', title: 'TV & Electronics Repairs' },
+  { src: 'https://www.electromart.com.gh/wp-content/uploads/2024/09/Nene-Photgraphy7681-scaled.jpg', cat: 'Stoves & Ovens', title: 'Stove & Oven Repairs' },
+  { src: 'https://b2blogger.com/pressroom/upload_images/2-1.JPG', cat: 'Microwaves', title: 'Microwave Repairs' },
+  { src: 'https://www.bestchoiceappliancerepairs.co.za/images/best_choice_hero.jpg', cat: 'Dishwashers', title: 'Dishwasher Repairs' },
+  { src: 'https://etimg.etb2bimg.com/thumb/msid-126394933%2Cwidth-1200%2Cheight-900%2Cresizemode-4/.jpg', cat: 'Household Appliances', title: 'Major Household Appliance Repairs' },
+  { src: 'https://fortune.com/img-assets/wp-content/uploads/2016/01/appliances-2-sa2-copy-copy.jpg?q=75&w=1440', cat: 'Laundry Appliances', title: 'Laundry Appliance Repairs' },
 ];
 
 const CATS = ['All', ...Array.from(new Set(IMAGES.map((i) => i.cat)))];
@@ -28,12 +28,12 @@ export default function Gallery() {
   return (
     <div className="page-enter pt-24">
       <section className="relative py-20 bg-appliance-900 overflow-hidden">
-        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url(https://cdn6.ep.dynamics.net/s3/rw-propertyimages/2801-H3125076-99702774__1721265853-49151-DSC07954.jpg?anchor=middlecenter&format=jpg&height=640&maxheight=2841&maxwidth=2841&mode=crop&quality=75&scale=down&width=640)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url(https://etimg.etb2bimg.com/thumb/msid-126394933%2Cwidth-1200%2Cheight-900%2Cresizemode-4/.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <span className="section-tag text-amber-400">Our Repair Categories</span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mt-2 mb-4">Appliance Gallery</h1>
           <div className="gold-bar mx-auto" />
-          <p className="text-appliance-300 max-w-xl mx-auto mt-4">A visual overview of the household and commercial appliances we service across Durban.</p>
+          <p className="text-appliance-300 max-w-xl mx-auto mt-4">Fridges, TVs, washing machines, ovens, stoves, microwaves, dishwashers and other household appliances we service across Durban.</p>
         </div>
       </section>
 
